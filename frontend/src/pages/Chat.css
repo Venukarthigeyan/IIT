@@ -1,0 +1,145 @@
+/* Root styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background for the page */
+    color: #f5f5f5; /* Light text for contrast */
+    overflow: hidden; /* Prevent page scrolling */
+}
+h1{
+    align-items: center;
+    text-align: center;
+    justify-content: center; 
+}
+/* Chat Container */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100vh; /* Full-screen height */
+    width: 100vw; /* Full-screen width */
+    box-sizing: border-box;
+}
+
+/* Chat Window */
+.chat-window {
+    flex-grow: 1;
+    overflow-y: auto; /* Enable scrolling for the chat content */
+    background-color: #1e1e1e; /* Slightly lighter dark for separation */
+    padding: 15px;
+    padding-bottom: 70px; /* Extra space for input area */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    display: flex;
+    flex-direction: column; /* Stack messages vertically */
+    gap: 10px; /* Space between messages */
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+
+/* Messages */
+.message {
+    max-width: 75%; /* Prevent messages from being too wide */
+    word-wrap: break-word;
+    padding: 12px 15px;
+    border-radius: 15px;
+    line-height: 1.4;
+    font-size: 16px;
+    display: inline-block;
+}
+
+/* User Messages */
+.message.user {
+    background-color: #dcf8c6; /* WhatsApp-like green bubble */
+    color: #000; /* Black text for contrast */
+    align-self: flex-end; /* Align user messages to the right */
+    text-align: left; /* Left-align text inside the bubble */
+    border-bottom-right-radius: 0; /* Flat corner for WhatsApp style */
+}
+
+/* Llama Messages */
+.message.digibot {
+    background-color: #ffffff; /* White bubble for Llama's messages */
+    color: #000; /* Black text for contrast */
+    align-self: flex-start; /* Align Llama messages to the left */
+    text-align: left;
+    border-bottom-left-radius: 0; /* Flat corner for WhatsApp style */
+}
+
+/* Typing Indicator */
+.message.digibot p {
+    font-style: italic;
+    color: #888; /* Subtle color for typing indicator */
+}
+
+/* Input Container */
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background-color: #1e1e1e; /* Matches chat window background */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3); /* Shadow above the input box */
+    position: sticky;
+    bottom: 0;
+    z-index: 10;
+}
+
+/* Input Field */
+.input-container input {
+    width: 80%; /* Reduced width */
+    max-width: 670px; /* Optional: Limit the max width */
+    padding: 8px 15px; /* Reduced padding for a smaller input field */
+    border: 1px solid #444;
+    border-radius: 25px;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px; /* Smaller font size */
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+.input-container input:focus {
+    border-color: #3a9ff3; /* Highlight border on focus */
+}
+
+/* Send Button */
+.input-container button {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #3a9ff3; /* Blue theme */
+    color: #fff;
+    border: none;
+    border-radius: 50%; /* Circle for the button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input-container button:hover {
+    background-color: #307fcc; /* Slightly darker blue on hover */
+}
+
+.input-container button:disabled {
+    background-color: #555; /* Gray for disabled state */
+    cursor: not-allowed;
+}
+
+/* Scrollbar Styling */
+.chat-window::-webkit-scrollbar {
+    width: 6px; /* Slim scrollbar */
+}
+
+.chat-window::-webkit-scrollbar-track {
+    background: #1e1e1e; /* Match the background */
+}
+
+.chat-window::-webkit-scrollbar-thumb {
+    background-color: #444; /* Dark thumb color */
+    border-radius: 6px; /* Rounded edges for better aesthetics */
+}
+
+.chat-window::-webkit-scrollbar-thumb:hover {
+    background-color: #666; /* Slightly lighter on hover */
+}

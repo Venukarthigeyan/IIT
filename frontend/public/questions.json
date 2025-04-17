@@ -1,0 +1,111 @@
+{
+    "books": [
+      {
+        "fileUrl": "/pdfs/X/Science/Science Textbook.pdf",
+        "questions": [
+            {
+                "question": "Which of the following does not involve a chemical reaction?",
+                "options": [
+                    "Melting of candle wax on heating",
+                    "Burning of candle wax when heated",
+                    "Digestion of food in our body",
+                    "Process of respiration"
+                ],
+                "correct_option": "Melting of candle wax on heating"
+            },
+            {
+                "question": "Which of the following statements is true for acids?",
+                "options": [
+                    "Sour and change blue litmus to red",
+                    "Bitter and change red litmus to blue",
+                    "Bitter and change blue litmus to red",
+                    "Sour and change red litmus to blue"
+                ],
+                "correct_option": "Sour and change blue litmus to red"
+            },
+            {
+                "question": "Which of the following oxide(s) of iron would be obtained on prolonged reaction of iron with steam?",
+                "options": [
+                    "Fe2O3 and Fe3O4",
+                    "Fe2O3",
+                    "FeO",
+                    "Fe3O4"
+                ],
+               "correct_option": "Fe3O4"
+            },
+            {
+                "question": "Pentane has the molecular formula C5H12. It has?",
+                "options": [
+                    "16 covalent bonds",
+                    "17 covalent bonds",
+                    "12 covalent bonds",
+                    "5 covalent bonds"
+                ],
+               "correct_option": "16 covalent bonds"
+            },
+            {
+                "question": "Which part of alimentary canal receives bile from the liver?",
+                "options": [
+                    "Oesophagus",
+                    "Large intestine",
+                    "Stomach",
+                    "Small intestine"
+                ],
+                "correct_option": "Small intestine"
+            },
+            {
+                "question": "Which gland secretes the growth hormone?",
+                "options": [
+                    "Adrenal",
+                    "Hypothalamus",
+                    "Pituitary gland",
+                    "Thyroid"
+                ],
+                "correct_option": "Pituitary gland"
+            },
+            {
+                "question": "Male reproductive organ in flowering plant is?",
+                "options": [
+                    "Ovary",
+                    "Stamen",
+                    "Corolla",
+                    "Carpel"
+                ],
+                "correct_option": "Stamen"
+            },
+            {
+                "question": "An object at a distance of 30 cm from a concave mirror gets its image at the same point. The focal length of the mirror is?",
+                "options": [
+                    "+15 cm",
+                    "-15 cm",
+                    "30 cm",
+                    "-30 cm"
+                ],
+                "correct_option": "-15 cm"
+            },
+            {
+                "question": "Direction of rotation of a coil in electric motor is determined by?",
+                "options": [
+                    "Faraday law of electromagnetic induction",
+                    "Fleming’s right hand rule",
+                    "Fleming’s left hand rule",
+                    "None of above"
+                ],
+                "correct_option": "Fleming’s left hand rule"
+            },
+            {
+                "question": "If a grasshopper is eaten by a frog, then the energy transfer will be from ?",
+                "options": [
+                    "secondary consumer to primary consumer",
+                    "primary consumer to secondary consumer ",
+                    "producer to primary consumer",
+                    "producer to decomposer"
+                ],
+                "correct_option": "primary consumer to secondary consumer"
+            }
+        ]
+        
+      }
+    ]
+  }
+  

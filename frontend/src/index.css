@@ -1,0 +1,10 @@
+/* index.css or global.css */
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-image: url('https://example.com/your-image.jpg'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Ensure the body takes the full viewport height */
+}
