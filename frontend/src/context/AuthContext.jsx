@@ -86,7 +86,7 @@ const AuthContextProvider = ({ children }) => {
 
 export default function GoogleAuthProviderWrapper({ children }) {
   return (
-    <GoogleOAuthProvider clientId="271298865885-ccoilnogt3kufdhjf2fv67anskokl1na.apps.googleusercontent.com">
+    <GoogleOAuthProvider clientId="271298865885-95pqm4lvjrnmqlluj7rg1tsl6vhq9k19.apps.googleusercontent.com">
       <AuthContextProvider>{children}</AuthContextProvider>
     </GoogleOAuthProvider>
   );
