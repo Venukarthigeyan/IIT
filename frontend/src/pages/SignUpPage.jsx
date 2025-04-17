@@ -44,7 +44,7 @@ const SignUpPage = () => {
 
     try {
       // Send user data to backend
-      const response = await fetch("http://localhost:5001/user/signup", {
+      const response = await fetch("https://iit-backend.onrender.com/user/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
