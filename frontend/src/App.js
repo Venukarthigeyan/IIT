@@ -20,7 +20,7 @@ function App() {
           <Route path="/forgot-password" component={ForgotPasswordPage} />
           <Route path="/search" component={SearchBooks} />
           <Route path="/signup" component={SignUpPage} />
-          <Route path="/chat" component={Chat} />
+          <Route path="/chat" component={DashboardPage} />
         </Switch>
       </Router>
     </GoogleAuthProviderWrapper>

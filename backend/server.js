@@ -22,7 +22,7 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 // Routes
 app.use("/user", userRoutes);
 
-async function checkOllamaStatus() {
+/*async function checkOllamaStatus() {
   try {
     // Dynamically import node-fetch
     const { default: fetch } = await import("node-fetch");
@@ -106,7 +106,7 @@ app.post("/api/chat", async (req, res) => {
   } catch (error) {
     res.status(500).json({ error: "Failed to generate response." });
   }
-});
+});*/
 const noteSchema = new mongoose.Schema({
   content: String,
   highlightAreas: [{
@@ -152,8 +152,8 @@ app.post('/api/notes', async (req, res) => {
 const PORT = process.env.PORT || 5001;
 app.listen(PORT, async () => {
   console.log(`Server running on http://localhost:${PORT}`);
-  const isOllamaRunning = await checkOllamaStatus();
+ /* const isOllamaRunning = await checkOllamaStatus();
   if (!isOllamaRunning) {
     console.error("Ollama is not running. Please start the service.");
-  }
+  }*/
 });
