@@ -18,7 +18,7 @@ const ForgotPasswordPage = () => {
       setError(""); // Clear any existing error
 
       try {
-        const response = await fetch("http://localhost:5001/user/forgot-password", {
+        const response = await fetch("https://iit-backend.onrender.com/user/forgot-password", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ email }),
