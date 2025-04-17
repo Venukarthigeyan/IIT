@@ -22,7 +22,7 @@ const ProfilePage = () => {
   useEffect(() => {
     const fetchProfileData = async () => {
       try {
-        const response = await fetch(`http://localhost:5001/user/getProfile`, {
+        const response = await fetch(`https://iit-backend.onrender.com/user/getProfile`, {
           method: "GET",
           headers: {
             Email: user?.email,
@@ -69,7 +69,7 @@ const ProfilePage = () => {
       formData.append("class", profileData.class);
       if (profilePicture) formData.append("profilePicture", profilePicture);
 
-      const response = await fetch("http://localhost:5001/user/updateProfile", {
+      const response = await fetch("https://iit-backend.onrender.com/user/updateProfile", {
         method: "POST",
         headers: {
           Email: user?.email,
